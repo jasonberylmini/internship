@@ -8,35 +8,61 @@
 <body>
   <p id="demo">hello world</p>
   <script>
-    // let x=10
-    // let y=20
-    // let z=x+y
-    // document.getElementById("demo").innerHTML=z
-    // let a=3
-    // let x = a*150
-    // document.getElementById("demo").innerHTML=x
-    // let x = 5
-    // x += 10
-    // document.getElementById("demo").innerHTML=x
-    // let a = "hello world"
-    // let b = ", this is Jason"
-    // document.getElementById("demo").innerHTML = a+b
-    // let text1 = "John"
-    // let text2 = "doe"
-    // let text3 = text1+ " "+text2;
-    // document.getElementById("demo").innerHTML = text3
-    // let a ="5"
-    // let b=5
-    // document.getElementById("demo").innerHTML = a+b
-    // let a ="5"
-    // let b=5
-    // document.getElementById("demo").innerHTML = (a===b)
-    let x = 6;
-    let y =3;
-    document.getElementById("demo").innerHTML =
-      (x<10 && y>1) + "<br>" +(x<10 && y <1);
-    document.getElementById("demo").innerHTML = !(x===y)+"<br>"+!(x>y);
-    
+    // Array operations
+    let arr = [1, 2, 3, 4, 54];
+    document.getElementById("demo").innerHTML = arr[4];
+
+    // Join method in array
+    document.getElementById("demo").innerHTML = arr.join("*");
+
+    // Pop method
+    arr.pop();  
+    document.getElementById("demo").innerHTML = arr;
+
+    // Push method
+    arr.push(78);
+    document.getElementById("demo").innerHTML = arr;
+
+    // Conditional statements
+    let time = new Date().getHours(); // Fixed `Data()` to `Date()`
+    let greeting;
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+
+    // Switch case statement
+    let day;
+    switch (new Date().getDay()) { // Fixed `Data()` to `Date()`
+      case 0:
+        day = "Sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+        break;
+      default:
+        day = "No day available";
+    }
+    document.getElementById("demo").innerHTML = day;
   </script>
 </body>
 </html>
