@@ -8,24 +8,90 @@
 <body>
   <p id="demo">hello world</p>
   <script>
-    // Array operations
+    // Arithmetic operations
+    let x = 10;
+    let y = 20;
+    let z = x + y;
+    document.getElementById("demo").innerHTML = z;
+
+    let a = 3;
+    x = a * 150;
+    document.getElementById("demo").innerHTML = x;
+
+    x = 5;
+    x += 10;
+    document.getElementById("demo").innerHTML = x;
+
+    // String concatenation
+    let str1 = "hello world";
+    let str2 = ", this is Jason";
+    document.getElementById("demo").innerHTML = str1 + str2;
+
+    let text1 = "John";
+    let text2 = "Doe";
+    let text3 = text1 + " " + text2;
+    document.getElementById("demo").innerHTML = text3;
+
+    // Type comparison
+    let num1 = "5";
+    let num2 = 5;
+    document.getElementById("demo").innerHTML = num1 + num2;
+    document.getElementById("demo").innerHTML = (num1 === num2);
+
+    // Logical operations
+    x = 6;
+    y = 3;
+    document.getElementById("demo").innerHTML = (x < 10 && y > 1) + "<br>" + (x < 10 && y < 1);
+    document.getElementById("demo").innerHTML = !(x === y) + "<br>" + !(x > y);
+
+    // Object creation and access
+    let obj = {name: "abc", age: 20, class: 10};
+    document.getElementById("demo").innerHTML = obj.class;
+
+    // Date object
+    let date = new Date().getDay();
+    document.getElementById("demo").innerHTML = date;
+
+    // Data types
+    let length = 16; // Number
+    let weight = 7.5; // Number
+    let color = "yellow"; // String
+    let lastName = "Johnson"; // String
+    let isTrue = true; // Boolean
+    let isFalse = false; // Boolean
+
+    const person = {firstName: "John", lastName: "Doe"}; // Object
+    const cars = ["Saab", "Volvo", "BMW"]; // Array
+    const invalidDate = new Date("2022-03-35"); // Date Object
+
+    // Function definition and call
+    function functionName() {
+      return "Hello from function";
+    }
+    document.getElementById("demo").innerHTML = functionName();
+
+    // Function with parameters
+    function test(p1, p2) {
+      return p1 * p2;
+    }
+    document.getElementById("demo").innerHTML = test(2, 4);
+
+    // Array methods
     let arr = [1, 2, 3, 4, 54];
     document.getElementById("demo").innerHTML = arr[4];
 
-    // Join method in array
     document.getElementById("demo").innerHTML = arr.join("*");
 
-    // Pop method
-    arr.pop();  
+    arr.pop();
     document.getElementById("demo").innerHTML = arr;
 
-    // Push method
     arr.push(78);
     document.getElementById("demo").innerHTML = arr;
 
     // Conditional statements
-    let time = new Date().getHours(); // Fixed `Data()` to `Date()`
+    let time = new Date().getHours();
     let greeting;
+    
     if (time < 10) {
       greeting = "Good morning";
     } else if (time < 20) {
@@ -35,9 +101,9 @@
     }
     document.getElementById("demo").innerHTML = greeting;
 
-    // Switch case statement
+    // Switch statement
     let day;
-    switch (new Date().getDay()) { // Fixed `Data()` to `Date()`
+    switch (new Date().getDay()) {
       case 0:
         day = "Sunday";
         break;
@@ -60,7 +126,7 @@
         day = "Saturday";
         break;
       default:
-        day = "No day available";
+        day = "Invalid day";
     }
     document.getElementById("demo").innerHTML = day;
   </script>
