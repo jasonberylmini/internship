@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Example</title>
+</head>
+<body>
+
+  <button onclick="myFunction()">Replace</button>
+  <p id="demo">Please visit moodbidri</p>
+
+  <script>
+    try {
+      alert("hello");
+    } catch (error) {
+      console.log(error);
+    }
+
+    function myFunction() {
+      // let text = document.getElementById("demo").innerHTML;
+      // console.log(text.replace("moodbidri","accelerlab"));
+      let textele = document.getElementById("demo"); // Get <p> element
+      textele.innerHTML = textele.innerHTML.replace("moodbidri", "accelerlab");
+    }
+
+    // Arrow function
+    const myFunction2 = () => {
+      console.log("I'm an arrow function");
+    };
+    myFunction2();
+
+    let a = [10, 20, 30, 40];
+    let result = a.map((item) => console.log(item * item));
+
+    // Destructure array
+    let arr = [1, 2, 3, 4];
+    const [first, second, third, fourth] = arr;
+    console.log(first); // Output: 1
+
+    // Object destructuring
+    const person = { name: 'John', age: 35, job: 'developer' };
+    const { name, age, job } = person;
+    console.log(name, age, job); // Output: John 35 developer
+
+    // Spread operator
+    let d = [1, 2, 3, 4];
+    let b = [5, 6, 7, 8];
+    let c = [...d, ...b];
+    console.log(c); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+    // Using object spread operator
+    const myVehicle = {
+      brand: 'Ford',
+      model: 'Mustang',
+      color: 'red'
+    };
+    const updateMyVehicle = {
+      type: 'car',
+      year: 2021,
+      color: 'yellow' // Corrected syntax issue (previously missing comma)
+    };
+    const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle };
+    console.log(myUpdatedVehicle);
+    // Output: { brand: 'Ford', model: 'Mustang', color: 'yellow', type: 'car', year: 2021 }
+
+    // Ternary operator
+    let x = 10;
+    x === 10 ? console.log("Match") : console.log("Not Match");
+  </script>
+
+</body>
+</html>
