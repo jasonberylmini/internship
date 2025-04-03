@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import Test from "./Test";
-
+import learning from "./Learning"
+import Newlearning from "./Newlearning"
 function App() {
   // let x = 5;
   // let text = "Hello Buddy!";
@@ -21,6 +22,8 @@ function App() {
     <div>
       {/* Hi this is Jason */}
       <Test />
+      {/* hi
+     <Newlearning/> */}
 
       {/* expressions */}
       {/* <h1>React is {5 + 5} times better with Js</h1>

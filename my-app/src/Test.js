@@ -7,15 +7,25 @@ function Test() {
 
   return (
     <div>
+      <form>
+        <label>
+          Email
+        </label>
+        <input type ="text"/>
+        <label>Password</label>
+        <button>submit</button>
+      </form>
+
+      {/* <Demo name="Jason"/> */}
       {/* Conditional Rendering */}
       {/* {demo ? <Demo /> : <Demo2 />} */}
 
       {/* Mapping Over Array */}
-      <ul>
+      {/* <ul>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* Keeping the past commented parts */}
       {/* <div> */}

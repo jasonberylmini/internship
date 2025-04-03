@@ -1,9 +1,9 @@
 import React from "react";
 
-function Demo() {
+function Demo(props) {
   return (
     <div>
-      <p>demo 1</p>
+      <p>demo 1,{props.name}</p>
     </div>
   );
 }
