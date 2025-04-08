@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 // import './App.css';
 import Test from "./Test";
-import learning from "./Learning"
-import Newlearning from "./Newlearning"
+// import learning from "./Learning"
+// import Newlearning from "./Newlearning"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   // let x = 5;
   // let text = "Hello Buddy!";
@@ -17,11 +18,18 @@ function App() {
   // const handleSubmit =(x) =>{
   //   alert(x);
   // };
+  // let arr = ["123","342","932","8392"]
 
   return (
     <div>
+      <BrowserRouter>
+          <Routes>
+          <Route path="/" element={<Test/>}></Route>
+          </Routes>
+      </BrowserRouter>
+      {/* {arr.map((item)=>(<li key = {item}>{item}</li>))} */}
       {/* Hi this is Jason */}
-      <Test />
+      {/* <Test /> */}
       {/* hi
      <Newlearning/> */}
 

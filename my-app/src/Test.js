@@ -2,19 +2,20 @@ import Demo from "./Demo";
 import Demo2 from "./Demo2";
 
 function Test() {
-  const items = ["Item 1", "Item 2", "Item 3"]; // Define an array
-  let demo = false;
+  // const items = ["Item 1", "Item 2", "Item 3"]; // Define an array
+  // let demo = false;
 
   return (
     <div>
-      <form>
+      <p>Hi</p>
+      {/* <form>
         <label>
           Email
         </label>
         <input type ="text"/>
         <label>Password</label>
         <button>submit</button>
-      </form>
+      </form> */}
 
       {/* <Demo name="Jason"/> */}
       {/* Conditional Rendering */}
